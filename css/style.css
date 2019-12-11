@@ -1,0 +1,515 @@
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*reset*/
+h1, h2, h3, h4, ul, li, a, .sec1, sec2, header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+
+body, html {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+ul {
+    list-style: none;
+}
+
+.owl-dots,
+.owl-nav,
+.sec3-mobile {
+    display: none;
+}
+
+.owl-carousel div.owl-item img {
+    max-width: 100%;
+    width: auto;
+}
+
+/*header*/
+
+.banner-top {
+    background: url("../assets/banner-top.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 621px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.top-text {
+    display: flex;
+    font-size: 43px;
+    justify-content: center;
+    padding: 25px;
+    box-shadow: 10px 10px 20px #ccc;
+}
+
+.top-text span {
+    margin-left: 15px;
+}
+
+.logo {
+    background: url("../assets/pelephonbooks.jpg") no-repeat bottom;
+    background-size: contain;
+    display: inline-block;
+    width: 322px;
+    height: 53px;
+}
+
+/*main starts*/
+/*section 1*/
+
+.sec1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.sec1 .phone-img {
+    background: url("../assets/mobile-img-d.png") no-repeat;
+    background-size: contain;
+    width: 373px;
+    height: 534px;
+}
+
+
+.sec1 .left-side {
+    width: 50%;
+}
+
+.sec1 .left-side h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.list-title, .list-title-m {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.list-title-m {
+    display: none;
+}
+
+ul .book-icon {
+    background: url("../assets/book-icon.jpg") no-repeat top right;
+    min-width: 26px;
+    max-width: 26px;
+    background-size: contain;
+    height: 30px;
+    margin-left: 7px;
+}
+
+li {
+    display: flex;
+    padding: 0;
+    font-size: 22px;
+}
+
+.list-wrap {
+    display: flex;
+    margin-right: -33px;
+}
+
+
+.list-wrap ul:first-of-type {
+    margin-left: 50px;
+}
+
+
+/*section 2*/
+.sec2 {
+    text-align: center;
+}
+
+.sec2 h3, .sec2 h4 {
+    color: #ec1887;
+}
+
+
+.sec2 h3 {
+    font-size: 37px;
+}
+
+.sec2 h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.links {
+    max-width: 620px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2 .cta {
+    background: #ec1887;
+    color: #fff;
+    width: 300px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+
+.sec2 .cta:hover {
+    background: #ff1995;
+    font-size: 22px;
+}
+
+
+/*carousel starts*/
+
+.sec3,.sec3-mobile {
+    margin-bottom: 100px;
+    background: #ebf0f4;
+    padding: 25px 0;
+}
+
+.owl-carousel-item {
+    display: flex;
+}
+
+.book-details {
+    display: flex;
+    width: 50%;
+    margin-right: 4px;
+    text-align: right;
+    flex-direction: column;
+    position: relative;
+}
+
+.book-rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.read-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #0078bd;
+    padding: 5px 20px;
+    border-radius: 7px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.read-link:hover {
+    background: #0098ef;
+}
+
+
+.book-details small {
+    display: block;
+}
+
+div.book-img {
+    background-size: contain;
+    display: inline-block;
+    width: 102px;
+    background-position: right;
+    height: 146px;
+}
+
+.book1 {
+    background: url("../assets/book1.jpg") no-repeat;
+
+}
+
+.book2 {
+    background: url("../assets/book2.jpg") no-repeat;
+}
+
+.book3 {
+    background: url("../assets/book3.jpg") no-repeat;
+}
+
+.book4 {
+    background: url("../assets/book4.jpg") no-repeat;
+}
+
+
+.book5 {
+    background: url("../assets/book5.jpg") no-repeat;
+}
+
+/*section 4*/
+
+.video-wrap {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+
+.video-wrap iframe {
+    width: 100%;
+    height: 620px;
+}
+
+/*media queries start*/
+
+
+@media (max-width: 991px) {
+
+    .br-hide {
+        display: none;
+    }
+
+    .top-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-text span {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sec1 .left-side {
+        margin-right: 20px;
+    }
+
+    .sec1 .left-side h2 {
+        text-align: right;
+        font-size: 32px;
+    }
+
+    .list-title {
+        margin-bottom: 20px;
+    }
+
+    .list-wrap {
+        margin: auto;
+    }
+
+
+    .li-text {
+        font-size: 16px;
+    }
+
+    .list-wrap ul:first-of-type {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner-top {
+        background: url("../assets/banner-top-mobile.jpg") no-repeat;
+        height: 639px;
+        background-size: 100% 100%;
+    }
+
+    .top-text {
+        display: none;
+    }
+
+    .sec1 {
+        padding: 20px 15px 0 0;
+    }
+
+    .right-side {
+        order: 2;
+    }
+
+    .list-title {
+        display: none;
+    }
+
+    .list-title-m {
+        display: block;
+        text-align: center;
+        margin: 20px 15px 0;
+    }
+
+    .list-title-m h2 {
+        font-size: 46px;
+        margin-bottom: 30px;
+    }
+
+    .sec1 .phone-img {
+        background: url("../assets/mobile-img-m.png") no-repeat;
+        width: 250px;
+        height: 446px;
+        background-size: contain;
+    }
+
+    .list-wrap {
+        flex-direction: column;
+    }
+
+    .sec1 .left-side {
+        width: 100%;
+    }
+
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2 .cta:first-of-type {
+        margin-bottom: 15px;
+    }
+
+    .video-wrap {
+        text-align: center;
+    }
+
+    .video-wrap iframe {
+        height: auto;
+        margin: auto;
+    }
+
+    .sec4 {
+        padding: 0 20px;
+    }
+    .sec3{
+        display: none;
+    }
+    .sec3-mobile{
+        display: block;
+     padding: 25px 15px 0;
+    }
+
+    .books-wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .book-card {
+        flex: 1 1 auto;
+        display: flex;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .list-title-m h2 {
+        font-size: 29px;
+    }
+
+    .sec1 {
+        padding: 0;
+    }
+    .sec3-mobile,
+    .sec1 .left-side {
+        margin: 0 auto 20px;
+        max-width: 70%;
+    }
+
+    .sec1 .phone-img {
+        background: url("../assets/mobile-img-m.png") no-repeat;
+        margin: auto;
+        width: 220px;
+        height: 534px;
+        background-size: contain;
+    }
+
+    .li-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+    .sec1 .phone-img {
+        width: 180px;
+    }
+
+    .book-card{
+        flex-basis: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .banner-top {
+        height: 400px;
+    }
+
+    .sec1 .phone-img {
+        height: 300px;
+        margin-top: 20px;
+        width: 160px;
+    }
+
+    .sec1 .left-side {
+        max-width: 100%;
+    }
+
+    .list-wrap {
+        padding: 10px 10px 0;
+    }
+
+    .li-text {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    ul .book-icon {
+        min-width: 13px;
+    }
+
+    .video-wrap,
+    .owl-carousel {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 375px) {
+    .sec1 .phone-img {
+        width: 120px;
+    }
+}
